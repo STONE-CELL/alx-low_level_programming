@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: using if condition and printf function to validate false or positive
+ * Description: validate false or positive values
  *
  * Return: 0 (success)
  */
