@@ -3,20 +3,20 @@
 /**
  * main - Entry point
  *
- * Description: print all alphabet letters
+ * Description: print all alphabet lowercase letters
  *
  * Returns: 0 (success)
  */
 int main(void)
 {
-	char po  = 'a';
+	int n = 97;
 
-	while (po <= 'z')
+	while (n <= 122)
 
 	{
 
-		putchar(po);
-		po++;
+		putchar(n);
+		n++;
 	}
 	putchar('\n');
 

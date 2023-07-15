@@ -9,7 +9,7 @@
 int main(void)
 {
 	int d = 97;
-	int n = 66;
+	int n = 65;
 
 	while (d <= 122)
 	{
