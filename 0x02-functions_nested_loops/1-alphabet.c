@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * main -Entry point
- * Description:prints alphapet in lowercase by print_alphabet
- * Return: always 0
+ * print_alphabet -  prints alphabet in lowercase
+ * Return: Always 0
  */
 void print_alphabet(void)
 {
