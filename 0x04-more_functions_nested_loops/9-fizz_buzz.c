@@ -12,11 +12,11 @@ int main(void)
 	for (f = 1; f <= 100; f++)
 	{
 		if (f % 3 == 0 && !(f % 5 == 0))
-			printf("Frizz");
+			printf("Fizz");
 		else if (f % 5 == 0 && !(f % 3 == 0)
 			printf("Buzz");
 		else if (f % 5 == 0 && (f % 3 == 0)
-			printf("FrizzBuzz")
+			printf("FizzBuzz")
 		else
 			printf("%d", f);
 		if (f != 100)
