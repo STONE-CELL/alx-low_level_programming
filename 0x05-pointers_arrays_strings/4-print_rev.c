@@ -1,19 +1,19 @@
 #include "main.h"
 /**
  * print_rev - puts string in reverse
- * @w: string character
+ * @str: string character
  * Return: always 0
  */
-void print_rev(char *w)
+void print_rev(char *str)
 {
 	int r = 0;
 
-	while (w[r])
+	while (str[r])
 		r++;
 
 	while (r--)
 	{
-		_putchar(w[r];
+		_putchar(str[r];
 	}
 	putchar('\n');
 }
