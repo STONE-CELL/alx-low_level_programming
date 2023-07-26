@@ -5,7 +5,7 @@
  * @b:second input
  * Return: always 0
  */
-void print_array(int *a, int *b)
+void print_array(int *a, int b)
 {
 	int i;
 
