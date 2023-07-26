@@ -3,7 +3,7 @@
  * puts - a function that prints every other character of a string
  * @str: string charcter
  */
-void puts(char str)
+void puts(char *str)
 {
 	int i;
 
