@@ -14,7 +14,7 @@ int _sqrt_recursion(int n)
  * t - find natural square root of a number
  * @n: input
  * @u: second input
- * Return : square root
+ * Return :if u * u > n returns -1
  */
 int t(int n, int u)
 {
