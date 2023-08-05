@@ -1,4 +1,5 @@
-#include <stdio>
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry point
  * @argc: input
@@ -13,7 +14,7 @@ int main(int argc, char *argv[])
 	while (--argc)
 	{
 		for (u = argv[argc]; *u; u++)
-			if (*u < '0' || *u > '0')
+			if (*u < '0' || *u > '9')
 				return (printf("Error\n", 1));
 		s += atoi(argv[argc]);
 	}
