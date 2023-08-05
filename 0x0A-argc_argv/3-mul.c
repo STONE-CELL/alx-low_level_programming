@@ -8,12 +8,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int o;
+	int sum;
 
 	if (argc == 3)
 	{
-		o = atoi(argv[1] * atoi(argv[2]);
-		printf("%d\n", o);
+		sum = atoi(argv[1] * atoi(argv[2]);
+		printf("%d\n", sum);
 	}
 	else
 	{
