@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * string_nconcat - Entry point
  * @s1 : first input
