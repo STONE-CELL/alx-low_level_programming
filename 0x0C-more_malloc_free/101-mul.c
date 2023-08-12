@@ -36,7 +36,7 @@ int _atoi(const char *o)
 		}
 	}
 
-	for (i = g; o[h] >= 48 && o[h] <= 57; h++)
+	for (h = g; o[h] >= 48 && o[h] <= 57; h++)
 	{
 		p *= 10;
 		p += (o[h] - 48);
