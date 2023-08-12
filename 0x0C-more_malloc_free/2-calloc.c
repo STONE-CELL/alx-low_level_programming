@@ -7,7 +7,7 @@
  * @t : pointer
  * @b : constant
  * @n : input
- * Return : s
+ * Return : t
  */
 char *_memset(char *t, char b, unsigned int n)
 {
