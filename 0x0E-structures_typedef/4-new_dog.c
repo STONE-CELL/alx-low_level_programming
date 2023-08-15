@@ -25,6 +25,7 @@ char *_strcopy(char *dest, char *src)
 
 	for (h = 0; src[h]; h++)
 		dest[h] = src[h];
+	dest[h] = '\0';
 
 	return (dest);
 }
@@ -52,7 +53,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1);
+	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if ((*dog).owner == NULL)
 	{
 		free(dog->name);
