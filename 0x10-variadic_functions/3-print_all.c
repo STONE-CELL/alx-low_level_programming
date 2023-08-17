@@ -52,7 +52,6 @@ void print_all(const char * const format, ...)
 	int r = 0, b;
 	char *separator = "";
 	va_list o;
-
 	token_t tokens[] = {
 		{"c", format_char},
 		{"i", format_int},
@@ -69,7 +68,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[r] == tokens[b].token[0])
 			{
-				tokens[b].f(seoarator, o);
+				tokens[b].f(separator, o);
 				separator = ", ";
 			}
 			b++;
