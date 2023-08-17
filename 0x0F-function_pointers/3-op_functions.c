@@ -39,3 +39,13 @@ int op_mod(int a, int b)
 {
 	return (a % b);
 }
+/**
+ * op_mul - Entry point
+ * @a:input
+ * @b:input
+ * Return: multiplication
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
