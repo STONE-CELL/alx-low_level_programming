@@ -1,24 +1,7 @@
 #include "lists.h"
 #include <string.h>
 #include <stdlib.h>
-/**
- * _strlen - Entry point
- * @s:input
- * Return: Always 0
- */
-int _strlen(char *s)
-{
-	int t = 0;
 
-	if (!s)
-		return(0);
-
-	while (*s++)
-
-		t++;
-
-	return (t);
-}
 /**
  * add_node_end - Entry point
  * @head:input
@@ -27,29 +10,27 @@ int _strlen(char *s)
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *b = malloc(sizeof(list_t));
-	list_t *y = *head;
+	list_t *n;
+	list_t *y;
+	unsigned int l = 0;
 
-	if (!head || !b)
+	n = malloc(sizeof(list_t));
+	if (!n)
 		return (NULL);
-	if (str)
-	{
-		b->str = strdup(str);
-		if (!b->str)
-		{
-			free(b);
-			return (NULL);
-		}
-		b->len = _strlen(b->str);
+	n->str = strdup(str);
+	n->len = l;
+	n->next = NULL;
 
-	}
-	if (y)
+	if (*head == NULL)
 	{
-		while (y->next)
-			y = y->next;
-		y->next = b;
+		*head = n;
+		return (n);
 	}
-	else
-		*head = b;
-	return (b);
+
+	while (y->next)
+		y = y->next;
+
+	y->next = n;
+
+	return (n);
 }
