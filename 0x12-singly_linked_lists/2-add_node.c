@@ -1,5 +1,22 @@
 #include "lists.h"
 /**
+ * _strlen - Entry point
+ * @s:input
+ * Return: Always 0
+ */
+int _strlen(char *s)
+{
+	int t = 0;
+
+	if (!s)
+		return (0);
+	while (*s++)
+
+		t++;
+
+	return (t);
+}
+/**
  * add_node - Entry point
  * @head: input
  * @str: input
