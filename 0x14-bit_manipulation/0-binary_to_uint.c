@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * binary_to_unit - Entry point
+ * binary_to_uint -  Entry point
  * @b:input
  *
- * Return: Always 0
+ * Return:the unsigned int of b
  */
 unsigned int binary_to_uint(const char *b)
 {
