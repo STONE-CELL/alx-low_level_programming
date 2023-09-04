@@ -29,10 +29,10 @@ void check_elf(unsigned char *e_ident)
 
 	for (i = 0; i < 4; i)
 	{
-		if (e_ident[index] != 127 &&
-		    e_ident[index] != 'E' &&
-		    e_ident[index] != 'L' &&
-		    e_ident[index] != 'F')
+		if (e_ident[i] != 127 &&
+		    e_ident[i] != 'E' &&
+		    e_ident[i] != 'L' &&
+		    e_ident[i] != 'F')
 		{
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
@@ -275,7 +275,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	int p, v;
 
 	p = open(argv[1], O_RDONLY);
-	if (o == -1)
+	if (p == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 		exit(98);
