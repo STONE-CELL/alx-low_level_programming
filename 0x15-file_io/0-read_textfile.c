@@ -10,20 +10,18 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *b;
-	ssize_t f;
-	ssize_t o;
-	ssize_t r;
+	int f;
+	ssize_t b;
+	char u[READ_BUF_SIZE * 8];
 
+	if (!filename || !letters)
+		return (0);
 	f = open(filename, O_RDONLY);
 	if (f == -1)
 		return (0);
-	b = malloc(sizeof(char) * letters);
-	r = read(f, b, letters);
-	o = write(STDOUT_FILENO, b, r);
-
-	free(b);
+	b = read(f, &u[0], letters);
+	b = write(STDOUT_FILENO, &u[0], b);
 	close(f);
-	return (r);
+	return (b);
 }
 
